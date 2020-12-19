@@ -142,15 +142,15 @@
             </div>
         </div>
 
-        <div class="container contactForm">
-            <form action="https://formspree.io/lanreadeniji77@gmail.com" method="POST">
-                <input type="text" placeholder="Name">
+        <div class="container" id="contactForm">
+            <form action="https://formspree.io/f/mjvppvyk" method="post">
+                <input type="text" id="text" placeholder="Name">
                 <br>
-                <input type="email" placeholder="Enter Email">
+                <input type="email" id="email" placeholder="Enter Email">
                 <br>
                 <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
                 <br>
-                <button>Submit</button>
+                <button class="formButton" formtarget="_blank" type="submit">Submit</button>
             </form>
         </div>
 
@@ -166,6 +166,18 @@
         </div>
         <div class=" container copyright">
             <p>Lanre Adeniji <span>&copy;</span>2021</p>
+        </div>
+    </section>
+
+    <section class="modalSection">
+        <div class="modal">
+            <div class="times">
+                <i class="fas fa-times"></i>
+            </div>
+            <p>
+                Thank you for reaching out. Your Message has been submitted successfully.
+            </p>
+
         </div>
     </section>
 

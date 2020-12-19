@@ -287,10 +287,10 @@
     font-size: 20px;
     margin: 0 0 40px 0;
 }
-.contactForm {
+#contactForm {
     text-align: center;
 }
-.contactForm input, .contactForm textarea{
+#contactForm input, #contactForm textarea{
     padding: 10px 0;
     margin: 1px;
     width: 500px;
@@ -298,7 +298,7 @@
     border: none;
     color: white;
 }
-.contactForm button {
+#contactForm button {
     cursor: pointer;
     outline: none;
     padding: 10px 30px;
@@ -307,7 +307,7 @@
     border: #fff 1px solid;
     background-color: transparent;
 }
-.contactForm button:hover {
+#contactForm button:hover {
     background-color: #034748;
     border: transparent 1px solid;
 }
@@ -339,6 +339,47 @@
 }
 .copyright span {
     color: #E20F0F;
+}
+/* Modal for submitted form */
+.modalSection {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; 
+    background-color: rgba(255, 255, 255, 0.4);
+    visibility: hidden;
+}
+.displayModalSection {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; 
+    background-color: rgba(255, 255, 255, 0.4);
+    visibility: visible;
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #034748;
+    padding: 50px 10px;
+    text-align: center;
+    font-size: 20px;
+    width: 250px;
+    color:#fff;
+}
+.times {
+    position: absolute;
+    top: 20px; 
+    right: 30px;
+    margin-bottom: 20px;
+}
+.times i {
+    color: #fff;
 }
 
 

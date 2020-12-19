@@ -32,3 +32,25 @@ function myJob(){
 }
 setInterval(myJob, time)
 
+//toggle modal classes
+
+let modalSection = document.getElementsByClassName('modalSection')[0],
+    dms = document.querySelector('.displayModalSection'),
+    contactForm = document.querySelector('.formButton'),
+    times = document.querySelector('.times');
+
+//Listen for event when submit button is clicked
+contactForm.addEventListener('click', function(){
+    if(modalSection.classList.contains('modalSection')){
+        modalSection.classList.toggle('displayModalSection')
+    }
+})
+
+//listen for event when times button is clicked
+times.addEventListener('click', function(){
+    if(modalSection.classList.contains('modalSection')){
+        modalSection.classList.toggle('displayModalSection');
+    }else{
+        modalSection.classList.toggle('modalSection')
+    }
+})
