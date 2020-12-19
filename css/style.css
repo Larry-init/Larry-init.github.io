@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+/* Name and description section */
+
+.name {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+}
+.skills {
+    text-align: center;
+}
+.name span {
+    color: #DB0A0A;
+}
+#particles-js {
+   height: 100vh;
+   background-color: #001021;
+   color: white; 
+}
+
+/* styling the button of View My Work */
+.work {
+    text-align: center;
+}
+.myWork {
+    display: inline-block;
+    margin: 10px 0;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+}
+.myWork {
+    padding: 12px 30px 12px 15px;
+    font-size: 18px;
+    border: #fff 2px solid;
+}
+.myWork a {
+    text-decoration: none;
+    color: #fff;
+    cursor: hand;
+}
+.myWork:hover {
+    background-color: #034748;
+    border: transparent 2px solid;
+}
+.myWork:hover i {
+    transform: rotateZ(90deg);
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+}
+.myWork span {
+    margin: 0 20px 0 0;
+    color: #fff;
+}
+
+/* About menu */
+.menu {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #002C5B;
+}
+.menu ul {
+    display: flex;
+}
+.menu li {
+    list-style: none;
+    padding: 20px 20px;
+}
+.menu li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+.menu ul li span {
+    color: #DB0A0A;
+}
+.menu ul li a:hover {
+    color: #DB0A0A;
+}
+
+/* About */
+.abt {
+    text-align: center;
+    font-size: 30px;
+    color: #002C5B;
+}
+.abt h1 {
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+.font {
+    text-align: center;
+}
+.font i {
+    background-color: #002C5B;
+    color: #fff;
+    padding: 40px;
+}
+.pic {
+    text-align: center;
+    margin-top: 30px;
+}
+.pic img {
+    border-radius: 50px;
+    height: auto;
+    width: 200px;
+}
+/* Flexing image and skills */
+.meetMe {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.me {
+    width: 700px;
+    text-align: center;
+
+}
+.me h1 {
+    font-size: 34px;
+    color: #002C5B;
+    margin: 20px 0;
+}
+.me p {
+    font-size: 25px;
+}
+.pic {
+    flex: 1;
+}
+
+/* About the tech i use */
+.tech {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.techFont {
+    text-align: center;
+    margin: 50px 0;
+}
+.techFont i{
+    color: #002C5B;
+}
+.design, .dev {
+    text-align: center;
+    padding: 30px 40px;
+    border: rgba(0,44,91,0.1) 1px solid;
+    border-radius: 20px;
+    flex: 1;
+}
+.design h1, .dev h1 {
+    font-size: 26px;
+    margin: 15px 0;
+}
+.design p, .dev p {
+    color: #333;
+    line-height: 1.6em;
+    font-size: 22px;
+}
+.design h2, .dev h2 {
+    font-size: 22px;
+    color: #002C5B;
+    margin: 10px 0;
+}
+
+/* Portfolio  */
+.portfolioSection {
+    background-color: rgba(225,225,225, 0.2);
+}
+.portfolio {
+    text-align: center;
+    font-size: 30px;
+    color: #002C5B;
+    padding: 20px 0 0 0;
+}
+.portfolio h1 {
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+.firstRow img, .secondRow img {
+    height: 200px;
+    width: auto;
+    opacity: 1;
+}
+.secondRow {
+    padding: 0 0 50px 0;
+}
+.firstRow img:hover, .secondRow img:hover {
+    opacity: 0;
+}
+.firstRow, .secondRow {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 40px 0;
+}
+.secondRow {
+    margin: 0;
+}
+.comfort, .prolink, .newYear, .birdview {
+    text-align: center;
+    position: relative;
+}
+.comfort p, .comfort h2, .prolink p, .newYear p, .birdview p, .prolink h2, .newYear h2, .birdview h2{
+    padding-top: 30px;
+}
+.learnMore {
+    margin: 40px;
+    transition: transform;
+    transform: translateY(100%);
+    transition-duration: 300ms;
+}
+.text:hover .learnMore {
+    transform: translateY(0);
+}
+.text h2, .text p {
+    transition: transform;
+    transform: translateY(-100%);
+    transition-duration: 300ms;
+}
+.text:hover h2, .text:hover p {
+    transform: translateY(0);
+}
+.text {
+    cursor: pointer;
+    height: 200px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.text p {
+    padding: 0;
+}
+.text:hover {
+    opacity: 1;
+}
+.text h2 {
+    color: #034748;
+}
+.text a {
+    color: #000;
+    text-decoration: none;
+    border: #034748 solid 2px;
+    cursor: hand;
+    padding: 12px 10px;
+}
+.text a:hover {
+    color: white;
+    background-color: #034748;
+    border: transparent 2px solid;
+}
+
+/* Contact page */
+.contactSection {
+    background-color: #001021;
+    border-radius: 15px 50px 30px;
+}
+.contact {
+    text-align: center;
+    font-size: 30px;
+    color: #002C5B;
+    padding: 20px 0 0 0;
+}
+.contact h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+.contact p {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 40px 0;
+}
+.contactForm {
+    text-align: center;
+}
+.contactForm input, .contactForm textarea{
+    padding: 10px 0;
+    margin: 1px;
+    width: 500px;
+    background-color: #000B17;
+    border: none;
+}
+.contactForm button {
+    cursor: pointer;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #fff;
+    border: #fff 1px solid;
+    background-color: transparent;
+}
+.contactForm button:hover {
+    background-color: #034748;
+    border: transparent 1px solid;
+}
+/* Social Media Icons */
+.socialMedia {
+    text-align: center;
+    margin-top: 30px;
+}
+.socialMedia i{
+    color: #fff;
+    padding: 15px;
+    background-color: #000B17;
+}
+.number {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+}
+.number i {
+    color: #fff;
+    padding: 15px;
+}
+.copyright {
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+}
+.copyright span {
+    color: #E20F0F;
+}
+
+
+
+
+
+
+
+@media(max-width: 768px){
+    .name {
+        font-size: 15px;
+    }
+    .skills {
+        font-size: 30px;
+    }
+}
+@media(max-width: 480px){
+    .name {
+        font-size: 10px;
+    }
+    .skills {
+        font-size: 25px;
+    }
+    
+}
