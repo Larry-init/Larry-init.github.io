@@ -56,7 +56,6 @@ times.addEventListener('click', function(){
 })
 
 //Animation on scroll using the AOS library
-window.addEventListener('load', AOS.refresh)
 AOS.init(
     {
         offset: 400,
