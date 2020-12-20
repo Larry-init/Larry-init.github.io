@@ -6,8 +6,10 @@
     <title>Lanre Adeniji</title>
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.0/css/all.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script defer src = "https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script defer src = "js/script.js"></script>
+    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 <body> 
     <section id = "intro">
@@ -23,163 +25,166 @@
         </div>
     </section>
 
-    <section id="about">
+    <div class="stickyMenu">
         <div class="menu">
             <ul>
-                <li><a href="#intro"><span>Home</span></a></li>
+                <li><a href="index.html"><span>Home</span></a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#portfolioSection">Portfolio</a></li>
+                <li><a href="#contactSection">Contact</a></li>
             </ul>
         </div>
-        <div class = "abt"><h1>About</h1></div>
-        <div class="meetMe container">
-            <div class="pic">
-                <img src="images/me.png" alt="me">
+        <section id="about">
+            <div class = "abt" data-aos="fade-right"><h1>About</h1></div>
+            <div class="meetMe container">
+                <div class="pic" data-aos="fade-up-right">
+                    <img src="images/me.png" alt="me">
+                </div>
+                <div class = "me" data-aos="fade-up-left">
+                    <h1>Hi! Nice to meet you.</h1>
+                    <p>I'm an Software Engineer, Electrical and Electronics Engineer and a tech. lover. My passion is drawn from getting it all automated with emerging technologies and giving dynamic user experiences. I ensure to write applications which are cross-platfom, have fast loading time and are responsive.</p>
+                </div>
             </div>
-            <div class = "me">
-                <h1>Hi! Nice to meet you.</h1>
-                <p>I'm an Software Engineer, Electrical and Electronics Engineer and a die-hard tech. lover. My passion is drawn from getting it all automated with emerging technologies and giving dynamic user experiences. I ensure to write applications which are cross-platfom, have fast loading time and are responsive.</p>
-            </div>
-        </div>
 
-        <div class="container tech">
-            <div class="design">
-                <div class="techFont"><i class="fas fa-pencil-alt fa-3x"></i></div>
-                <div>
-                    <h1>Designer</h1>
-                    <p>I make visualization and designs that keeps user informed on first glance</p>
-                </div>
-                <div>
-                    <h2>I love to design:</h2>
-                    <p>UI, UX, logos, cartoonize, web</p>
-                </div>
-
-                <div>
-                    <h2>Design tools</h2>
-                    <p>AdobeXD<br>Photoshop <br>Sketch</p>
-                </div>
-            </div>
-            <div class="dev">
-                <div class="techFont"><i class="fas fa-laptop-code fa-3x"></i></div>
-                <div>
+            <div class="container tech">
+                <div class="design" data-aos="fade-right">
+                    <div class="techFont"><i class="fas fa-pencil-alt fa-3x"></i></div>
                     <div>
-                        <h1>Front-end Developer</h1>
-                        <p>Writing code that transforms my imagination to reality and my thought to life is what I love to do.</p>
+                        <h1>Designer</h1>
+                        <p>I make visualization and designs that keeps user informed on first glance</p>
                     </div>
                     <div>
-                        <h2>Languages I speak:</h2>
-                        <p>HTML, CSS, Bootstrap, JavaScript, Python</p>
+                        <h2>I love to design:</h2>
+                        <p>UI, UX, logos, cartoonize, web</p>
                     </div>
+
                     <div>
-                        <h2>Dev Tools:</h2>
-                        <p>Atom <br> VSCode <br>Github <br>Codepen <br>Pycham</p>
+                        <h2>Design tools</h2>
+                        <p>AdobeXD<br>Photoshop <br>Sketch</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class = "portfolioSection">
-        <div class = "portfolio"><h1>Portfolio</h1></div>
-        <div class="container recentWork">
-            <div class="firstRow">                
-                <div class="comfort">
-                    <div class = "firstPic">
-                        <img src="images/one.png" alt="Comfort Hotel">
-                    </div>
-                    <div class = "text">
-                        <h2>Comfort Hotel</h2>
-                        <p>HTML,CSS,JavaScript</p>
-                        <div class = "learnMore"><a href="https://larry-init.github.io/ComfortHotel/" target="_blank">LEARN MORE</a></div>
-                    </div>
-                </div>
-                <div class = "prolink">
-                    <div class = "secondPic">
-                        <img src="images/four.png" alt="Comfort Hotel">
-                    </div>
-                    <div class = "text">
-                        <h2>Prolink</h2>
-                        <p>HTML,CSS,JavaScript</p>
-                        <div class = "learnMore"><a href="https://larry-init.github.io/ComfortHotel/" target="_blank">LEARN MORE</a></div>
-                    </div> 
-                </div>
-            </div>
-        </div>
-
-
-        <div class="container recentWork">
-            <div class="secondRow">
-                <div class="newYear">
+                <div class="dev" data-aos="fade-left">
+                    <div class="techFont"><i class="fas fa-laptop-code fa-3x"></i></div>
                     <div>
-                        <img src="images/three.png" alt="">
-                    </div>
-                    <div class = "text">
-                        <h2>New Year Countdown</h2>
-                        <p>HTML,CSS,JavaScript</p>
-                        <div class = "learnMore"><a href="https://larry-init.github.io/ComfortHotel/" target="_blank">LEARN MORE</a></div>
-                    </div>
-                </div>
-                <div class = "birdview">
-                    <div>
-                        <img src="images/five.png" alt="">
-                    </div>
-                    <div class = "text">
-                        <h2>Birdview</h2>
-                        <p>HTML,CSS,JavaScript</p>
-                        <div class = "learnMore"><a href="https://larry-init.github.io/ComfortHotel/" target="_blank">LEARN MORE</a></div>
+                        <div>
+                            <h1>Front-end Developer</h1>
+                            <p>Writing code that transforms my imagination to reality and my thought to life is what I love to do.</p>
+                        </div>
+                        <div>
+                            <h2>Languages I speak:</h2>
+                            <p>HTML, CSS, Bootstrap, JavaScript, Python</p>
+                        </div>
+                        <div>
+                            <h2>Dev Tools:</h2>
+                            <p>Atom <br> VSCode <br>Github <br>Codepen <br>Pycham</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class = "contactSection">
-        <div class = "container">
-            <div class="contact">
-                <h1>Contact</h1>
-            <p>Have a question or want to work?</p>
+        <section id="portfolioSection">
+            <div class="portfolio" data-aos="fade-right"><h1>Portfolio</h1></div>
+            <div class="container recentWork">
+                <div class="firstRow">                
+                    <div class="comfort" data-aos="fade-right">
+                        <div class = "firstPic">
+                            <img src="images/one.png" alt="Comfort Hotel">
+                        </div>
+                        <div class = "text">
+                            <h2>Comfort Hotel</h2>
+                            <p>HTML,CSS,JavaScript</p>
+                            <div class = "learnMore"><a href="https://larry-init.github.io/ComfortHotel/" target="_blank">LEARN MORE</a></div>
+                        </div>
+                    </div>
+                    <div class = "prolink" data-aos="fade-left">
+                        <div class = "secondPic">
+                            <img src="images/four.png" alt="Comfort Hotel">
+                        </div>
+                        <div class = "text">
+                            <h2>Prolink</h2>
+                            <p>HTML,CSS,JavaScript</p>
+                            <div class = "learnMore"><a href="https://larry-init.github.io/ComfortHotel/" target="_blank">LEARN MORE</a></div>
+                        </div> 
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="container" id="contactForm">
-            <form action="https://formspree.io/f/mjvppvyk" method="post">
-                <input type="text" id="text" placeholder="Name">
-                <br>
-                <input type="email" id="email" placeholder="Enter Email">
-                <br>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <br>
-                <button class="formButton" formtarget="_blank" type="submit">Submit</button>
-            </form>
-        </div>
 
-        <div class="container socialMedia">
-            <a href=""><i class="fab fa-github"></i></a>
-            <a href=""><i class="fab fa-linkedin-in"></i></a>
-            <a href=""><i class="fab fa-facebook-f"></i></a>
-            <a href=""><i class="fab fa-twitter"></i></a>
-        </div>
-        <div class="number">
-            <i class="fas fa-phone"></i>07067576316
-            <i class="far fa-envelope"></i>lanreadeniji77@gmail.com
-        </div>
-        <div class=" container copyright">
-            <p>Lanre Adeniji <span>&copy;</span>2021</p>
-        </div>
-    </section>
-
-    <section class="modalSection">
-        <div class="modal">
-            <div class="times">
-                <i class="fas fa-times"></i>
+            <div class="container recentWork">
+                <div class="secondRow">
+                    <div class="newYear" data-aos="fade-right">
+                        <div>
+                            <img src="images/three.png" alt="">
+                        </div>
+                        <div class = "text">
+                            <h2>New Year Countdown</h2>
+                            <p>HTML,CSS,JavaScript</p>
+                            <div class = "learnMore"><a href="https://larry-init.github.io/ComfortHotel/" target="_blank">LEARN MORE</a></div>
+                        </div>
+                    </div>
+                    <div class = "birdview" data-aos="fade-left">
+                        <div>
+                            <img src="images/five.png" alt="">
+                        </div>
+                        <div class = "text">
+                            <h2>Birdview</h2>
+                            <p>HTML,CSS,JavaScript</p>
+                            <div class = "learnMore"><a href="https://larry-init.github.io/ComfortHotel/" target="_blank">LEARN MORE</a></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>
-                Thank you for reaching out. Your Message has been submitted successfully.
-            </p>
+        </section>
 
-        </div>
-    </section>
+        <section id="contactSection">
+            <div class = "container">
+                <div class="contact" data-aos="fade-right">
+                    <h1>Contact</h1>
+                <div data-aos="fade-right">
+                    <p>Have a question or want to work?</p>
+                </div>
+                </div>
+            </div>
 
+            <div class="container" id="contactForm" data-aos="fade-right">
+                <form action="https://formspree.io/f/mjvppvyk" method="post">
+                    <input type="text" id="text" placeholder="Name">
+                    <br>
+                    <input type="email" id="email" placeholder="Enter Email">
+                    <br>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <br>
+                    <button class="formButton" formtarget="_blank" type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="container socialMedia">
+                <a href=""><i class="fab fa-github"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="number">
+                <i class="fas fa-phone"></i>07067576316
+                <i class="far fa-envelope"></i>lanreadeniji77@gmail.com
+            </div>
+            <div class=" container copyright">
+                <p>Lanre Adeniji <span>&copy;</span>2021</p>
+            </div>
+        </section>
+
+        <section class="modalSection">
+            <div class="modal">
+                <div class="times">
+                    <i class="fas fa-times"></i>
+                </div>
+                <p>
+                    Thank you for reaching out. Your Message has been submitted successfully.
+                </p>
+
+            </div>
+        </section>
+    </div>
 </body>
 </html>

@@ -54,3 +54,14 @@ times.addEventListener('click', function(){
         modalSection.classList.toggle('modalSection')
     }
 })
+
+//Animation on scroll using the AOS library
+window.addEventListener('load', AOS.refresh)
+AOS.init(
+    {
+        offset: 400,
+        duration: 1000
+    }
+);
+
+

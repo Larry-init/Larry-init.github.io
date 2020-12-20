@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .container {
     width: 60%;
     margin: auto;
@@ -21,7 +23,7 @@
     text-align: center;
 }
 .name span {
-    color: #DB0A0A;
+    color: #E20F0F;
 }
 #particles-js {
    height: 100vh;
@@ -70,6 +72,7 @@
     position: sticky;
     top: 0;
     background-color: #002C5B;
+    z-index: 1;
 }
 .menu ul {
     display: flex;
@@ -86,7 +89,7 @@
 .menu ul li span {
     color: #DB0A0A;
 }
-.menu ul li a:hover {
+.menu ul li a:active {
     color: #DB0A0A;
 }
 
@@ -177,7 +180,7 @@
 }
 
 /* Portfolio  */
-.portfolioSection {
+#portfolioSection {
     background-color: rgba(225,225,225, 0.2);
 }
 .portfolio {
@@ -267,7 +270,7 @@
 }
 
 /* Contact page */
-.contactSection {
+#contactSection {
     background-color: #001021;
     border-radius: 15px 50px 30px;
 }
