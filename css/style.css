@@ -129,7 +129,6 @@ html {
 .me {
     width: 700px;
     text-align: center;
-
 }
 .me h1 {
     font-size: 34px;
@@ -296,7 +295,7 @@ html {
 #contactForm input, #contactForm textarea{
     padding: 10px 0;
     margin: 1px;
-    width: 500px;
+    width: 600px;
     background-color: #000B17;
     border: none;
     color: white;
@@ -391,20 +390,32 @@ html {
 
 
 
-@media(max-width: 768px){
+@media(max-width: 1200px){
     .name {
-        font-size: 15px;
+        font-size: 30px;
     }
     .skills {
         font-size: 30px;
     }
+    .meetMe, .tech, .firstRow, .secondRow {
+        flex-direction: column;
+    }
+    #contactForm input, #contactForm textarea{
+        width: 400px;
+    }
+
 }
 @media(max-width: 480px){
     .name {
-        font-size: 10px;
+        font-size: 20px;
     }
     .skills {
-        font-size: 25px;
+        font-size: 20px;
     }
-    
+    .me {
+        width: 400px;
+    }
+    #contactForm input, #contactForm textarea{
+        width: 300px;
+    }
 }
