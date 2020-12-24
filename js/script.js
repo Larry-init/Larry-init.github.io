@@ -58,16 +58,9 @@ times.addEventListener('click', function(){
 //Animation on scroll using the AOS library
 AOS.init(
     {
-        offset: 400,
+        offset: 350,
         duration: 500
     }
 );
 
 //Make active link have color
-const currentLocation = location.href;
-const link = document.querySelectorAll('a');
-for(let i = 0; i < link.length; i++){
-    if (link[i].href === currentLocation){
-        link[i].className = 'active';
-    }
-}

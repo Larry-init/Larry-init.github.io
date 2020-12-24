@@ -142,7 +142,7 @@ a.active {
     flex: 1;
 }
 
-/* About the tech i use */
+/* Tech and design */
 .tech {
     display: flex;
     justify-content: space-between;
@@ -384,12 +384,46 @@ a.active {
     color: #fff;
 }
 
-@media(max-width: 1200px){
+@media(max-width: 1000px){
     .name {
-        font-size: 30px;
+        font-size: 18px;
     }
     .skills {
-        font-size: 30px;
+        font-size: 18px;
+    }
+    .abt, .portfolio {
+        font-size: 16px;
+    }
+    .abt h1, .portfolio h1 {
+        margin-bottom: 0;
+    }
+    .firstRow img, .secondRow img {
+        height: 170px;
+    }
+    .me {
+        width: 90%;
+        text-align: center;
+    }
+    .me h1 {
+        font-size: 16px;
+    }
+    .me p {
+        font-size: 14px;
+    }
+    .design h1, .dev h1 {
+        font-size: 16px;
+    }
+    .design h2, .dev h2 {
+        font-size: 16px;
+    }
+    .design p, .dev p {
+        font-size: 14px;
+    }
+    .pic img {
+        width: 120px;
+    }
+    .myWork {
+        font-size: 14;
     }
     .meetMe, .tech, .firstRow, .secondRow {
         flex-direction: column;
@@ -399,10 +433,6 @@ a.active {
     }
     #contactForm input, #contactForm textarea{
         width: 400px;
-    }
-    .me {
-        width: 500px;
-        text-align: center;
     }
 }
 
