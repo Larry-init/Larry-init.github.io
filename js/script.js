@@ -63,4 +63,11 @@ AOS.init(
     }
 );
 
-
+//Make active link have color
+const currentLocation = location.href;
+const link = document.querySelectorAll('a');
+for(let i = 0; i < link.length; i++){
+    if (link[i].href === currentLocation){
+        link[i].className = 'active';
+    }
+}

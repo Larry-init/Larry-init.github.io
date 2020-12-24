@@ -86,10 +86,10 @@ html {
     font-size: 25px;
     color: #fff;
 }
-.menu ul li span {
+.menu ul li a:hover {
     color: #DB0A0A;
 }
-.menu ul li a:active {
+a.active {
     color: #DB0A0A;
 }
 
@@ -384,12 +384,6 @@ html {
     color: #fff;
 }
 
-
-
-
-
-
-
 @media(max-width: 1200px){
     .name {
         font-size: 30px;
@@ -400,11 +394,18 @@ html {
     .meetMe, .tech, .firstRow, .secondRow {
         flex-direction: column;
     }
+    .comfort, .newYear, .design {
+        margin-bottom: 40px;
+    }
     #contactForm input, #contactForm textarea{
         width: 400px;
     }
-
+    .me {
+        width: 500px;
+        text-align: center;
+    }
 }
+
 @media(max-width: 480px){
     .name {
         font-size: 20px;
