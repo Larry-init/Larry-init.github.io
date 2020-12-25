@@ -58,7 +58,7 @@ times.addEventListener('click', function(){
 //Animation on scroll using the AOS library
 AOS.init(
     {
-        offset: 350,
+        offset: 200,
         duration: 500
     }
 );
