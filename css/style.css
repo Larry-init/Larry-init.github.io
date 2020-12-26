@@ -9,6 +9,9 @@ html {
     width: 60%;
     margin: auto;
 }
+.hamburgerMenu, .faBars i {
+    display: none;
+}
 /* Name and description section */
 
 .name {
@@ -205,8 +208,11 @@ a.active {
 }
 .firstRow, .secondRow {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0 0 40px 0;
+}
+.comfort, .newYear {
+    margin-right: 30px;
 }
 .secondRow {
     margin: 0;
@@ -384,7 +390,59 @@ a.active {
     color: #fff;
 }
 
-@media(max-width: 1000px){
+@media(max-width: 800px){
+    .hamburgerMenu, .faBars i {
+        display: contents;
+    }
+    .menu {
+        display: none;
+    }
+    .hamburgerMenu {
+        position: sticky;
+        top: 0;
+        color: white;
+        z-index: 2;
+    }
+    .hamburgerMenu ul {
+        background-color: #001021;
+    }
+    .hamburgerMenu li {
+        list-style: none;
+        padding: 10px 0 10px 0;
+    }
+    .hamburgerMenu a {
+        color: white;
+        margin-left: 30px;
+        text-decoration: none;
+    }
+    .hamburgerMenu a:hover {
+        color: #DB0A0A;
+    }
+    .noHamburgerMenu {
+        height: 0;
+        display: none;
+    }
+    .bar {
+        background-color: #002C5B;
+        z-index: 1;
+        padding: 20px;
+    }
+    .noBar {
+        height: 0;
+        display: none;
+    }
+    .faBars, .faTimes {
+        text-align: right;
+    }
+    .faTimes {
+        position: sticky;
+        top: 0;
+        padding: 20px;
+        background-color: #002C5B;
+    }
+    .bar i {
+        color: white;
+    }
     .name {
         font-size: 18px;
     }
@@ -420,10 +478,14 @@ a.active {
         font-size: 14px;
     }
     .pic img {
-        width: 120px;
+        width: 100px;
     }
     .myWork {
         font-size: 14;
+        padding: 9px 0px 9px 7px;
+    }
+    .myWork i {
+        display: none;
     }
     .meetMe, .tech, .firstRow, .secondRow {
         flex-direction: column;
@@ -432,7 +494,7 @@ a.active {
         margin-bottom: 40px;
     }
     #contactForm input, #contactForm textarea{
-        width: 400px;
+        width: 300px;
     }
 }
 

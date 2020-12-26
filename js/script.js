@@ -63,4 +63,26 @@ AOS.init(
     }
 );
 
-//Make active link have color
+//Script for hamburger and times for menu dropdown
+let noHamburger = document.getElementsByClassName('noHamburgerMenu')[0],
+    hamburger = document.getElementsByClassName('hamburgerMenu')[0],
+    noBar = document.getElementsByClassName('noBar')[0],
+    bar = document.getElementsByClassName('bar')[0],
+    faBars = document.querySelector('.faBars'),
+    faTimes = document.querySelector('.faTimes');
+
+faBars.addEventListener('click', function(){
+    if(noHamburger.classList.contains('noHamburgerMenu')){
+        noHamburger.classList.remove('noHamburgerMenu');
+        noHamburger.classList.add('hamburgerMenu');
+        bar.classList.toggle('noBar');
+    }
+})
+faTimes.addEventListener('click', function(){
+    if(noHamburger.classList.contains('hamburger')){
+        noHamburger.classList.remove('hamburgerMenu');
+        noHamburger.classList.add('noHamburgerMenu');
+        noBar.classList.toggle('bar');
+        console.log('larry')
+    }
+})
