@@ -404,6 +404,7 @@ a.active {
         z-index: 2;
     }
     .hamburgerMenu ul {
+        position: sticky;
         background-color: #001021;
     }
     .hamburgerMenu li {
@@ -436,7 +437,7 @@ a.active {
     }
     .faTimes {
         position: sticky;
-        top: 0;
+       top: 0; 
         padding: 20px;
         background-color: #002C5B;
     }

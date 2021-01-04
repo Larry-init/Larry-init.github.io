@@ -56,12 +56,12 @@ times.addEventListener('click', function(){
 })
 
 //Animation on scroll using the AOS library
-AOS.init(
-    {
-        offset: 200,
-        duration: 500
-    }
-);
+// AOS.init(
+//     {
+//         offset: 200,
+//         duration: 500
+//     }
+// );
 
 //Script for hamburger and times for menu dropdown
 let noHamburger = document.getElementsByClassName('noHamburgerMenu')[0],
@@ -78,11 +78,9 @@ faBars.addEventListener('click', function(){
         bar.classList.toggle('noBar');
     }
 })
-faTimes.addEventListener('click', function(){
-    if(noHamburger.classList.contains('hamburger')){
-        noHamburger.classList.remove('hamburgerMenu');
-        noHamburger.classList.add('noHamburgerMenu');
-        noBar.classList.toggle('bar');
-        console.log('larry')
+faTimes.addEventListener('click', function (){
+    if(noHamburger.classList.contains('hamburgerMenu')){
+        hamburger.classList.remove('hamburgerMenu');
+        hamburger.classList.add('noHamburgerMenu');
     }
 })
