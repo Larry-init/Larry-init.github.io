@@ -130,7 +130,7 @@ a.active {
     align-items:center;
 }
 .me {
-    width: 700px;
+    width: 60%;
     text-align: center;
 }
 .me h1 {
@@ -390,7 +390,7 @@ a.active {
     color: #fff;
 }
 
-@media(max-width: 800px){
+@media(max-width: 1000px){
     .hamburgerMenu, .faBars i {
         display: contents;
     }
@@ -460,7 +460,7 @@ a.active {
         height: 170px;
     }
     .me {
-        width: 90%;
+        width: 100%;
         text-align: center;
     }
     .me h1 {
@@ -512,7 +512,7 @@ a.active {
         font-size: 14px;
     }
     #contactForm input, #contactForm textarea{
-        width: 300px;
+        width: 100%;
     }
     .socialMedia, .number {
         font-size: 14px;
