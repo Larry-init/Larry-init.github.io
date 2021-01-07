@@ -10,7 +10,7 @@
             "type": ["circle", "star"]
         },
         "size": {
-            "value": 8,
+            "value": 5,
             "random": true
         },
         "line_linked": {
