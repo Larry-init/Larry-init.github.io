@@ -9,7 +9,7 @@ html {
     width: 60%;
     margin: auto;
 }
-.hamburgerMenu, .faBars i {
+.noHamburgerMenu, .faBars i {
     display: none;
 }
 /* Name and description section */
@@ -391,7 +391,7 @@ a.active {
 }
 
 @media(max-width: 1000px){
-    .hamburgerMenu, .faBars i {
+    .noHamburgerMenu, .faBars i {
         display: contents;
     }
     .menu {
@@ -450,12 +450,12 @@ a.active {
     .skills {
         font-size: 18px;
     }
-    .abt, .portfolio {
+    .abt, .portfolio, .contact {
         font-size: 16px;
     }
     .abt h1, .portfolio h1 {
         margin-bottom: 0;
-    }
+    } 
     .firstRow img, .secondRow img {
         height: 170px;
     }
@@ -499,6 +499,9 @@ a.active {
     #contactForm input, #contactForm textarea{
         width: 100%;
     }
+    #contactForm button {
+        font-size: 16px;
+    }
     .socialMedia, .number {
         font-size: 16px;
     }
@@ -515,6 +518,12 @@ a.active {
         width: 100%;
     }
     .socialMedia, .number {
+        font-size: 10px;
+    }
+    #contactForm button {
         font-size: 14px;
+    }
+    #contactSection {
+        border-radius: 0;
     }
 }
