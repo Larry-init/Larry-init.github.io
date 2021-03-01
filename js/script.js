@@ -56,31 +56,34 @@ times.addEventListener('click', function(){
 })
 
 //Animation on scroll using the AOS library
-AOS.init(
-    {
-        offset: 200,
-        duration: 500
-    }
-);
+// AOS.init(
+//     {
+//         offset: 200,
+//         duration: 500
+//     }
+// );
 
 //Script for hamburger and times for menu dropdown
-let noHamburger = document.getElementsByClassName('noHamburgerMenu')[0],
-    hamburger = document.getElementsByClassName('hamburgerMenu')[0],
-    noBar = document.getElementsByClassName('noBar')[0],
-    bar = document.getElementsByClassName('bar')[0],
-    faBars = document.querySelector('.faBars'),
-    faTimes = document.querySelector('.faTimes');
+// let noHamburger = document.getElementsByClassName('noHamburgerMenu')[0],
+//     hamburger = document.getElementsByClassName('hamburgerMenu')[0],
+//     noBar = document.getElementsByClassName('noBar')[0],
+//     bar = document.getElementsByClassName('bar')[0],
+//     faBars = document.querySelector('.faBars'),
+//     faTimes = document.querySelector('.faTimes');
 
-faBars.addEventListener('click', function(){
-    if(noHamburger.classList.contains('noHamburgerMenu')){
-        noHamburger.classList.remove('noHamburgerMenu');
-        noHamburger.classList.add('hamburgerMenu');
-        bar.classList.toggle('noBar');
-    }
-})
-faTimes.addEventListener('click', function (){
-    if(noHamburger.classList.contains('hamburgerMenu')){
-        hamburger.classList.remove('hamburgerMenu');
-        hamburger.classList.add('noHamburgerMenu');
-    }
-})
+// faBars.addEventListener('click', function(){
+//     if(noHamburger.classList.contains('noHamburgerMenu')){
+//         noHamburger.classList.remove('noHamburgerMenu');
+//         noHamburger.classList.add('hamburgerMenu');
+//         bar.classList.toggle('noBar');
+//     }
+// })
+// faTimes.addEventListener('click', function(){
+//     if(hamburger.classList.contains('hamburgerMenu')){
+//         hamburger.classList.remove('hamburgerMenu');
+//         hamburger.classList.add('noHamburgerMenu');
+//         noBar.classList.toggle('bar');
+//     }
+// })
+
+

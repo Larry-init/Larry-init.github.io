@@ -9,7 +9,7 @@ html {
     width: 60%;
     margin: auto;
 }
-.noHamburgerMenu, .faBars i {
+.hamburger, .faBars i {
     display: none;
 }
 /* Name and description section */
@@ -391,32 +391,31 @@ a.active {
 }
 
 @media(max-width: 1000px){
-    .noHamburgerMenu, .faBars i {
+    .hamburger, .faBars i {
         display: contents;
     }
     .menu {
         display: none;
     }
-    .hamburgerMenu {
+    .hamburger {
         position: sticky;
-        top: 0;
+        bottom: 0;
         color: white;
         z-index: 2;
     }
-    .hamburgerMenu ul {
-        position: sticky;
+    .hamburger ul {
         background-color: #001021;
     }
-    .hamburgerMenu li {
+    .hamburger li {
         list-style: none;
         padding: 10px 0 10px 0;
     }
-    .hamburgerMenu a {
+    .hamburger a {
         color: white;
         margin-left: 30px;
         text-decoration: none;
     }
-    .hamburgerMenu a:hover {
+    .hamburger a:hover {
         color: #DB0A0A;
     }
     .noHamburgerMenu {
@@ -424,9 +423,12 @@ a.active {
         display: none;
     }
     .bar {
+        position: sticky;
+        top: 0;
         background-color: #002C5B;
         z-index: 1;
         padding: 20px;
+        display: none;
     }
     .noBar {
         height: 0;
@@ -436,8 +438,6 @@ a.active {
         text-align: right;
     }
     .faTimes {
-        position: sticky;
-       top: 0; 
         padding: 20px;
         background-color: #002C5B;
     }
