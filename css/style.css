@@ -9,7 +9,7 @@ html {
     width: 60%;
     margin: auto;
 }
-.hamburger, .faBars i {
+.noHamburgerMenu, .faBars i {
     display: none;
 }
 /* Name and description section */
@@ -398,8 +398,8 @@ a.active {
         display: none;
     }
     .hamburger {
-        position: sticky;
-        bottom: 0;
+        /* position: sticky;
+        bottom: 0; */
         color: white;
         z-index: 2;
     }
@@ -420,7 +420,7 @@ a.active {
     }
     .noHamburgerMenu {
         height: 0;
-        display: none;
+        overflow: hidden;
     }
     .bar {
         position: sticky;
@@ -428,11 +428,10 @@ a.active {
         background-color: #002C5B;
         z-index: 1;
         padding: 20px;
-        display: none;
     }
     .noBar {
         height: 0;
-        display: none;
+        overflow: hidden;
     }
     .faBars, .faTimes {
         text-align: right;

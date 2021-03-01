@@ -64,26 +64,24 @@ AOS.init(
 );
 
 //Script for hamburger and times for menu dropdown
-let noHamburger = document.getElementsByClassName('noHamburgerMenu')[0],
-    hamburger = document.getElementsByClassName('hamburgerMenu')[0],
-    noBar = document.getElementsByClassName('noBar')[0],
-    bar = document.getElementsByClassName('bar')[0],
-    faBars = document.querySelector('.faBars'),
-    faTimes = document.querySelector('.faTimes');
+
+let bar = document.getElementsByClassName('bar')[0],
+    faBars = document.getElementsByClassName('faBars')[0],
+    noHamburger = document.getElementsByClassName('noHamburgerMenu')[0],
+    faTimes = document.getElementsByClassName('faTimes')[0];
+
 
 faBars.addEventListener('click', function(){
-    if(noHamburger.classList.contains('noHamburgerMenu')){
-        noHamburger.classList.remove('noHamburgerMenu');
-        noHamburger.classList.add('hamburgerMenu');
+    if(bar.classList.contains('bar')){
         bar.classList.toggle('noBar');
+        noHamburger.classList.toggle('hamburger');
+        bar.classList.toggle('bar');
     }
 })
+
 faTimes.addEventListener('click', function(){
-    if(hamburger.classList.contains('hamburgerMenu')){
-        hamburger.classList.remove('hamburgerMenu');
-        hamburger.classList.add('noHamburgerMenu');
-        noBar.classList.toggle('bar');
+    if(noHamburger.classList.contains('hamburger')){
+        noHamburger.classList.toggle('hamburger');
+        bar.classList.toggle('bar');
     }
 })
-
-
