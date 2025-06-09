@@ -6,16 +6,13 @@ particlesJS.load('particles-js', 'particles.json',function(){
 //Job description
 let job = [
     {
-        "name":"Front-end Developer",
+        "name":"DevOps Engineer",
     },
     {
-        "name":"Programmer",
+        "name":"Technology Enthusiast"
     },
     {
-        "name":"Electrical Engineer"
-    },
-    {
-        "name":"Software Engineer"
+        "name":"Automation Engineer"
     }
 ]
 

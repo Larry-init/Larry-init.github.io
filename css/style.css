@@ -6,7 +6,7 @@ html {
     scroll-behavior: smooth;
 }
 .container {
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 .noHamburgerMenu, .faBars i {
@@ -38,6 +38,13 @@ html {
 .work {
     text-align: center;
 }
+.work button {
+    margin-right: 25px;
+    padding: 15px 25px;
+    background-color: #034748;
+    border: 0;
+    border-radius: 12px;
+}
 .myWork {
     display: inline-block;
     margin: 10px 0;
@@ -56,7 +63,7 @@ html {
     cursor: hand;
 }
 .myWork:hover {
-    background-color: #034748;
+    background-color: #DB0A0A;
     border: transparent 2px solid;
 }
 .myWork:hover i {
@@ -69,6 +76,22 @@ html {
     color: #fff;
 }
 
+/* Resume */
+
+.resume button {
+    margin-right: 25px;
+    padding: 15px 25px;
+    background-color: #DB0A0A;
+    border: 0;
+    border-radius: 12px;
+}
+.resume ul a{
+    color: white;
+    font-size: 20px;
+    height: 100%;
+    text-decoration: none;
+}
+
 /* About menu */
 .menu {
     width: 100%;
@@ -76,9 +99,13 @@ html {
     top: 0;
     background-color: #002C5B;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .menu ul {
     display: flex;
+    flex-direction: row;
 }
 .menu li {
     list-style: none;
@@ -139,7 +166,8 @@ a.active {
     margin: 20px 0;
 }
 .me p {
-    font-size: 25px;
+    font-size: 18px;
+    text-align: justify;
 }
 .pic {
     flex: 1;
@@ -166,6 +194,14 @@ a.active {
     border-radius: 20px;
     flex: 1;
 }
+.dev p a {
+    text-decoration: none;
+}
+.dev img {
+    width: 20px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
 .design h1, .dev h1 {
     font-size: 26px;
     margin: 15px 0;
@@ -173,10 +209,10 @@ a.active {
 .design p, .dev p {
     color: #333;
     line-height: 1.6em;
-    font-size: 22px;
+    font-size: 14px;
 }
 .design h2, .dev h2 {
-    font-size: 22px;
+    font-size: 18px;
     color: #002C5B;
     margin: 10px 0;
 }

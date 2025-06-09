@@ -1,13 +1,13 @@
 {
     "particles": {
         "number": {
-            "value": 300
+            "value": 40
         },
         "color": {
             "value": ["#1481BA","#034748", "#11B5E4"]
         },
         "shape": {
-            "type": ["circle", "star"]
+            "type": ["circle", "star", "triangle", "square", "polygon", "heart"]
         },
         "size": {
             "value": 5,
@@ -17,7 +17,7 @@
             "enable":false
         },
         "move": {
-            "speed": 4
+            "speed": 5
         }
     },
     "interactivity": {
@@ -33,7 +33,7 @@
         },
         "modes": {
             "bubble": {
-                "distance": 50,
+                "distance": 10,
                 "size": 20
             }
         }
