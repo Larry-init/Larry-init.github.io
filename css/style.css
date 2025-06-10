@@ -76,6 +76,8 @@ html {
     color: #fff;
 }
 
+
+
 /* Resume */
 
 .resume button {
@@ -216,6 +218,28 @@ a.active {
     color: #002C5B;
     margin: 10px 0;
 }
+
+/* Work experience section */
+.jobDetail {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6px;
+    font-weight: bold;
+}
+.jobDetail p {
+    color: #002C5B;
+}
+.description {
+    text-align: left;
+    padding: 0 16px;
+    margin: 10px 0;
+}
+.workExperience {
+    margin-bottom: 24px;
+}
+/* .detail p {
+   
+} */
 
 /* Portfolio  */
 #portfolioSection {
