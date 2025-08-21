@@ -1,4 +1,4 @@
-name: CI: Build, Push, Update Manifests (ArgoCD)
+name: CI Build, Push, Update Manifests (ArgoCD)
 
 on:
   push:
