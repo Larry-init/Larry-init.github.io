@@ -1,1 +1,54 @@
+name: CI: Build, Push, Update Manifests (ArgoCD)
 
+on:
+  push:
+    branches: [ "master" ]
+  workflow_dispatch:
+
+jobs:
+  build-push-update:
+    runs-on: ubuntu-latest
+
+    env:
+      REGISTRY: docker.io
+      IMAGE_NAME: larryinit/myapp
+      TAG: latest
+      DOCKERHUB_USERNAME: larryinit
+      DOCKERHUB_PASSWORD: Madeniji1!   # ⚠️ hardcoded for testing only
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Login to Docker Hub
+        run: echo "${DOCKERHUB_PASSWORD}" | docker login -u "${DOCKERHUB_USERNAME}" --password-stdin
+
+      - name: Set up Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build and push image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.TAG }}
+
+      - name: Install Kustomize
+        run: |
+          curl -sSL https://github.com/kubernetes-sigs/kustomize/releases/latest/download/kustomize_linux_amd64.tar.gz \
+          | tar -xz
+          sudo mv kustomize /usr/local/bin/
+
+      - name: Update image in k8s manifests
+        working-directory: k8s
+        run: |
+          kustomize edit set image web-image=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.TAG }}
+          cat kustomization.yaml
+
+      - name: Commit and push manifest change
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git add k8s/kustomization.yaml
+          git commit -m "ci: deploy image ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.TAG }}"
+          git push
