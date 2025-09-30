@@ -33,28 +33,28 @@ jobs:
           push: true
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.TAG }}
 
-      - name: Install Kustomize
-        run: |
-          curl -s "https://api.github.com/repos/kubernetes-sigs/kustomize/releases/latest" \
-          | grep browser_download_url \
-          | grep linux_amd64.tar.gz \
-          | cut -d '"' -f 4 \
-          | xargs curl -L -o kustomize.tar.gz
+      # - name: Install Kustomize
+      #   run: |
+      #     curl -s "https://api.github.com/repos/kubernetes-sigs/kustomize/releases/latest" \
+      #     | grep browser_download_url \
+      #     | grep linux_amd64.tar.gz \
+      #     | cut -d '"' -f 4 \
+      #     | xargs curl -L -o kustomize.tar.gz
           
-          tar -xvf kustomize.tar.gz
-          chmod +x kustomize
-          mv kustomize /usr/local/bin/
+      #     tar -xvf kustomize.tar.gz
+      #     chmod +x kustomize
+      #     mv kustomize /usr/local/bin/
 
-      - name: Update image in k8s manifests
-        working-directory: k8s
-        run: |
-          kustomize edit set image web-image=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.TAG }}
-          cat kustomization.yaml
+      # - name: Update image in k8s manifests
+      #   working-directory: k8s
+      #   run: |
+      #     kustomize edit set image web-image=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.TAG }}
+      #     cat kustomization.yaml
 
-      - name: Commit and push manifest change
-        run: |
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor }}@users.noreply.github.com"
-          git add k8s/kustomization.yaml
-          git commit -m "ci: deploy image ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.TAG }}"
-          git push
+      # - name: Commit and push manifest change
+      #   run: |
+      #     git config user.name "${{ github.actor }}"
+      #     git config user.email "${{ github.actor }}@users.noreply.github.com"
+      #     git add k8s/kustomization.yaml
+      #     git commit -m "ci: deploy image ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.TAG }}"
+      #     git push
