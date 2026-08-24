@@ -12,7 +12,10 @@ let job = [
         "name":"Technology Enthusiast"
     },
     {
-        "name":"Automation Engineer"
+        "name":"Platform Engineer"
+    },
+    {
+        "name":"Cloud Architect"
     }
 ]
 
